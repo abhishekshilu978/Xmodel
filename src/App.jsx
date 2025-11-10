@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-
+import "./App.css";
 
 function App() {
     const [userName, setUserName] = useState("");
@@ -32,12 +31,16 @@ function App() {
             </button>
 
         </div>
+        {/* Bootstrap Modal */}
         <div 
-        className="modal fade"
+        // className="modal fade"
+        className="modal"
         id="exampleModal"
         tabIndex="-1"
         aria-labelledby="exammpleModalLabel"
         aria-hidden="true"
+        data-bs-backdrop="true"
+        // data-bs-backdrop="static"
         >
             <div className="modal-dialog">
                 <div className="modal-content">
